@@ -92,9 +92,7 @@ app.post('/login', async(req, res)=>{
 })
 
 app.get('/profile', (req, res) =>{
-  res.render('profile',{
-    Username: Username
-  })
+  res.render('profile')
 })
 
 
