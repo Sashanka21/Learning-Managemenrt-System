@@ -39,7 +39,7 @@ router.post('/update', (req, res) =>{
     const id = req.body.id;
 
     tasks.findOneAndUpdate({_id: id}, { status: true }, (err,doc) =>{
-        res.redirect('/');
+        res.redirect('/dashboard');
     });
 
 });
